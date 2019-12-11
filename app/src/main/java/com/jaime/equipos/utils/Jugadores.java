@@ -1,13 +1,25 @@
 package com.jaime.equipos.utils;
 
+import android.widget.ImageView;
+
 public class Jugadores {
 
     String nombre;
     boolean estrellaJugador;
+    int fotoJugador;
 
-    public Jugadores( String nombre, boolean estrellaJugador) {
+    public Jugadores( String nombre, boolean estrellaJugador,int fotoJugador) {
         this.nombre = nombre;
         this.estrellaJugador = estrellaJugador;
+        this.fotoJugador = fotoJugador;
+    }
+
+    public int getFotoJugador() {
+        return fotoJugador;
+    }
+
+    public void setFotoJugador(int fotoJugador) {
+        this.fotoJugador = fotoJugador;
     }
 
     public String getNombre() {

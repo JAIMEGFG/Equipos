@@ -38,6 +38,7 @@ public class AdaptadorJugadores extends RecyclerView.Adapter<AdaptadorJugadores.
     public void onBindViewHolder(@NonNull AdaptadorJugadores.HolderAdapterPropio holder, int position) {
         final Jugadores actual = (listaJugadores.get(position));
         holder.getNombre().setText(actual.getNombre());
+        holder.getFotojugador().setImageResource(actual.getFotoJugador());
         //como sacar un color si aqui no hay getResources
 
         if (!actual.isEstrellaJugador())
@@ -52,18 +53,27 @@ public class AdaptadorJugadores extends RecyclerView.Adapter<AdaptadorJugadores.
     class HolderAdapterPropio extends RecyclerView.ViewHolder{
         private ImageView estrella;
         private TextView nombre;
+        private ImageView fotojugador;
 
 
         public HolderAdapterPropio(@NonNull View itemView) {
             super(itemView);
             estrella = itemView.findViewById(R.id.estrella_jugador);
             nombre = itemView.findViewById(R.id.nombre_jugador);
+            fotojugador = itemView.findViewById(R.id.fotoJugador);
 
         }
         public Layout getLayout(){
             return getLayout();
         }
 
+        public ImageView getFotojugador() {
+            return fotojugador;
+        }
+
+        public void setFotojugador(ImageView fotojugador) {
+            this.fotojugador = fotojugador;
+        }
 
         public void setEstrella_(ImageView estrella) {
             this.estrella = estrella;

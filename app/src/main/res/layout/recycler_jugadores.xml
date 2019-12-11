@@ -39,7 +39,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:src="@drawable/atletico"
+                android:src="@android:drawable/star_on"
                 android:id="@+id/estrella_jugador" />
 
 
