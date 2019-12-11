@@ -1,8 +1,9 @@
 package com.jaime.equipos.utils;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Equipos {
+public class Equipos implements Serializable {
     String nombreEquipos,estadio;
     int escudo;
     ArrayList ligasJugadores;

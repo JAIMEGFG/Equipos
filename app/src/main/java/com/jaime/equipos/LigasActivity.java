@@ -85,15 +85,16 @@ public class LigasActivity extends AppCompatActivity implements AdaptadorLigas.O
     public void onMiRecycler(Ligas ligas) {
         adaptadorEquipos = new AdaptadorEquipos(LigasActivity.this, ligas.getLigasEquipos());
         recyclerEquipos.setAdapter(adaptadorEquipos);
-        adaptadorEquipos.notifyDataSetChanged(); 
+        adaptadorEquipos.notifyDataSetChanged();
 
     }
 
     @Override
     public void onMiRecycler(Equipos equipos) {
-        adaptadorJugadores = new AdaptadorJugadores(JugadoresActivity.this, Equipos.getLigasJugadores());
-        recycler.setAdapter(adaptadorEquipos);
-        adaptadorEquipos.notifyDataSetChanged();
+        Intent i = new Intent(getApplicationContext(),JugadoresActivity.class);
+        i.putExtra(TAG_1,equipos);
+        startActivity(i);
+
     }
 
     @Override

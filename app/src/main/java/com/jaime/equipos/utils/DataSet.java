@@ -17,32 +17,32 @@ public class DataSet {
 
         ArrayList<Equipos> lista = new ArrayList<>();
 
-        lista.add(new Equipos("FC.Barcelona","CampNou", R.drawable.barsa));
-        lista.add(new Equipos("Real Madrid","Bernabeu", R.drawable.madrid));
-        lista.add(new Equipos("Atletico de Madrid","CampNou", R.drawable.atletico));
-        lista.add(new Equipos("Valencia","Mestalla", R.drawable.valencia));
-        lista.add(new Equipos("Sevilla","Sanchez Pijuan", R.drawable.sevilla));
-        lista.add(new Equipos("Getafe","Alfonso Perez", R.drawable.getafe));
-        lista.add(new Equipos("Leganes","Butarque", R.drawable.leganes));
+        lista.add(new Equipos("FC.Barcelona","CampNou", R.drawable.barsa,null));
+        lista.add(new Equipos("Real Madrid","Bernabeu", R.drawable.madrid,null));
+        lista.add(new Equipos("Atletico de Madrid","CampNou", R.drawable.atletico,null));
+        lista.add(new Equipos("Valencia","Mestalla", R.drawable.valencia,null));
+        lista.add(new Equipos("Sevilla","Sanchez Pijuan", R.drawable.sevilla,null));
+        lista.add(new Equipos("Getafe","Alfonso Perez", R.drawable.getafe,null));
+        lista.add(new Equipos("Leganes","Butarque", R.drawable.leganes,null));
         return lista;
     }
 
     public ArrayList listaEquiposPremier(){
         ArrayList<Equipos> lista = new ArrayList<>();
-        lista.add(new Equipos("M. City","Etihad Stadium", R.drawable.city));
-        lista.add(new Equipos("Liverpool","Anfiled", R.drawable.liverpool));
-        lista.add(new Equipos("Manchester United","Old Traford", R.drawable.manchester));
-        lista.add(new Equipos("Everton","Goodison", R.drawable.everton));
-        lista.add(new Equipos("Leicester","King Power Stadium", R.drawable.leices));
-        lista.add(new Equipos("Chelsea","Stanford Bridge", R.drawable.chelsea));
+        lista.add(new Equipos("M. City","Etihad Stadium", R.drawable.city,null));
+        lista.add(new Equipos("Liverpool","Anfiled", R.drawable.liverpool,null));
+        lista.add(new Equipos("Manchester United","Old Traford", R.drawable.manchester,null));
+        lista.add(new Equipos("Everton","Goodison", R.drawable.everton,null));
+        lista.add(new Equipos("Leicester","King Power Stadium", R.drawable.leices,null));
+        lista.add(new Equipos("Chelsea","Stanford Bridge", R.drawable.chelsea,null));
         return lista;
     }
 
     public ArrayList listaEquiposItalia(){
         ArrayList<Equipos> lista = new ArrayList<>();
-        lista.add(new Equipos("Juventus","Etihad Stadium", R.drawable.juventus));
-        lista.add(new Equipos("Milan","Old Traford", R.drawable.milan));
-        lista.add(new Equipos("Inter","Goodison", R.drawable.inter));
+        lista.add(new Equipos("Juventus","Etihad Stadium", R.drawable.juventus,null));
+        lista.add(new Equipos("Milan","Old Traford", R.drawable.milan,null));
+        lista.add(new Equipos("Inter","Goodison", R.drawable.inter,null));
         return lista;
     }
 
