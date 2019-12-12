@@ -3,4 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="portero">#CDDC39</color>
+    <color name="defensa">#F44336</color>
+    <color name="medio">#4CAF50</color>
+    <color name="delantero">#2196F3</color>
 </resources>

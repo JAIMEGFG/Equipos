@@ -7,11 +7,21 @@ public class Jugadores {
     String nombre;
     boolean estrellaJugador;
     int fotoJugador;
+    String posicion;
 
-    public Jugadores( String nombre, boolean estrellaJugador,int fotoJugador) {
+    public Jugadores( String nombre, boolean estrellaJugador,int fotoJugador,String posicion) {
         this.nombre = nombre;
         this.estrellaJugador = estrellaJugador;
         this.fotoJugador = fotoJugador;
+        this.posicion = posicion;
+    }
+
+    public String getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
     }
 
     public int getFotoJugador() {

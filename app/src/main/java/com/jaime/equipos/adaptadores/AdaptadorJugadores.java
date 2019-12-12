@@ -1,5 +1,6 @@
 package com.jaime.equipos.adaptadores;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.Layout;
 import android.view.LayoutInflater;
@@ -34,6 +35,7 @@ public class AdaptadorJugadores extends RecyclerView.Adapter<AdaptadorJugadores.
     }
 
     //Retorna el numero de elementos
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(@NonNull AdaptadorJugadores.HolderAdapterPropio holder, int position) {
         final Jugadores actual = (listaJugadores.get(position));
@@ -43,6 +45,17 @@ public class AdaptadorJugadores extends RecyclerView.Adapter<AdaptadorJugadores.
 
         if (!actual.isEstrellaJugador())
             holder.getEstrella().setVisibility(View.INVISIBLE);
+        if (actual.getPosicion() == "portero"){
+            holder.getNombre().setBackgroundColor(R.color.portero);
+        } else if (actual.getPosicion() == "defensa"){
+            holder.getNombre().setBackgroundColor(R.color.defensa);
+        } else if (actual.getPosicion()=="medio"){
+            holder.getNombre().setBackgroundColor(R.color.medio);
+        }else if (actual.getPosicion()=="delantero"){
+            holder.getNombre().setBackgroundColor(R.color.delantero);
+
+        }
+
 
     }
     @Override
@@ -54,6 +67,7 @@ public class AdaptadorJugadores extends RecyclerView.Adapter<AdaptadorJugadores.
         private ImageView estrella;
         private TextView nombre;
         private ImageView fotojugador;
+
 
 
         public HolderAdapterPropio(@NonNull View itemView) {
