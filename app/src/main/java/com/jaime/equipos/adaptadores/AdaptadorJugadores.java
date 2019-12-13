@@ -56,7 +56,6 @@ public class AdaptadorJugadores extends RecyclerView.Adapter<AdaptadorJugadores.
 
         }
 
-
     }
     @Override
     public int getItemCount() {
